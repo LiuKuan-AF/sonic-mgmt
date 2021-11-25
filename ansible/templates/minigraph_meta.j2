@@ -28,55 +28,55 @@
             <a:Value>True</a:Value>
           </a:DeviceProperty>
 {% endif %}
-{% if dhcp_servers %}
-          <a:DeviceProperty>
-            <a:Name>DhcpResources</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ dhcp_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if ntp_servers %}
-          <a:DeviceProperty>
-            <a:Name>NtpResources</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ ntp_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if radius_servers %}
-          <a:DeviceProperty>
-            <a:Name>RadiusResources</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ radius_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if snmp_servers %}
-          <a:DeviceProperty>
-            <a:Name>SnmpResources</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ snmp_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if syslog_servers %}
-          <a:DeviceProperty>
-            <a:Name>SyslogResources</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ syslog_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if tacacs_group %}
-          <a:DeviceProperty>
-            <a:Name>TacacsGroup</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ tacacs_group }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
-{% if tacacs_servers %}
-          <a:DeviceProperty>
-            <a:Name>TacacsServer</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ tacacs_servers_str }}</a:Value>
-          </a:DeviceProperty>
-{% endif %}
+# {% if dhcp_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>DhcpResources</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ dhcp_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if ntp_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>NtpResources</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ ntp_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if radius_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>RadiusResources</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ radius_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if snmp_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>SnmpResources</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ snmp_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if syslog_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>SyslogResources</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ syslog_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if tacacs_group %}
+#           <a:DeviceProperty>
+#             <a:Name>TacacsGroup</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ tacacs_group }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
+# {% if tacacs_servers %}
+#           <a:DeviceProperty>
+#             <a:Name>TacacsServer</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ tacacs_servers_str }}</a:Value>
+#           </a:DeviceProperty>
+# {% endif %}
 {% if forced_mgmt_routes %}
           <a:DeviceProperty>
             <a:Name>ForcedMgmtRoutes</a:Name>
@@ -84,13 +84,13 @@
             <a:Value>{{ forced_mgmt_routes_str }}</a:Value>
           </a:DeviceProperty>
 {% endif %}
-{% if erspan_dest %}
-          <a:DeviceProperty>
-            <a:Name>ErspanDestinationIpv4</a:Name>
-            <a:Reference i:nil="true"/>
-            <a:Value>{{ erspan_dest_str }}</a:Value>
-         </a:DeviceProperty>
-{% endif %}
+# {% if erspan_dest %}
+#           <a:DeviceProperty>
+#             <a:Name>ErspanDestinationIpv4</a:Name>
+#             <a:Reference i:nil="true"/>
+#             <a:Value>{{ erspan_dest_str }}</a:Value>
+#          </a:DeviceProperty>
+# {% endif %}
 {% if switch_type is defined and switch_type == 'voq' %}
           <a:DeviceProperty>
             <a:Name>SwitchType</a:Name>

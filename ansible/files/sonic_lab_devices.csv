@@ -1,8 +1,5 @@
 Hostname,ManagementIp,HwSku,Type,Protocol
-dev-msn2700-01,10.251.0.188/23,Mellanox-2700,DevSonic,
-dev-7260-10,10.251.0.13/23,Arista-7260QX-64,FanoutLeaf,
-dev-7260-11,10.251.0.234/23,Arista-7260QX-64,FanoutRoot,
-dev-acs-serv-01,10.251.0.245/23,TestServ,Server,
-pdu-1,192.168.9.2,Apc,Pdu,snmp
-pdu-2,192.168.9.3,Sentry,Pdu,snmp
-console-1,192.168.10.1,Cisco,ConsoleServer,ssh
+marvell-falcon-01,192.168.15.41/20,db98cx8540_16cd,DevSonic,
+str-7260-10,192.168.15.18/20,Arista-7260QX-64,FanoutLeaf,
+str-7260-11,192.168.15.34/20,Arista-7260QX-64,FanoutRoot,
+str-acs-serv-01,192.168.13.130/20,TestServ,Server,

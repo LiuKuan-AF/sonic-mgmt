@@ -15,18 +15,18 @@
     "switch_login": {
         "Nexus": { 
             "user": "admin",
-            "passwd": ["password"], 
+            "passwd": ["asteros"], 
             "enable": null
         },
         "Arista": {
             "user": "admin",
-            "passwd": ["password", "123456"],
+            "passwd": ["asteros", "123456"],
             "enable": ["", null]
         },
         "Force10": {
             "user": "admin",
-            "passwd": ["password"],
-            "enable": ["password"] 
+            "passwd": ["asteros"],
+            "enable": ["asteros"] 
         }
     }
 }

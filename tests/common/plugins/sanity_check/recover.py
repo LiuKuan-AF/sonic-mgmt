@@ -35,9 +35,9 @@ def __recover_interfaces(dut, fanouthosts, result, wait_time):
             action = 'config_reload'
             continue
 
-        fanout, fanout_port = fanout_switch_port_lookup(fanouthosts, dut.hostname, port)
-        if fanout and fanout_port:
-            fanout.no_shutdown(fanout_port)
+        # fanout, fanout_port = fanout_switch_port_lookup(fanouthosts, dut.hostname, port)
+        # if fanout and fanout_port:
+        #     fanout.no_shutdown(fanout_port)
         dut.no_shutdown(port)
     wait(wait_time, msg="Wait {} seconds for interface(s) to restore.".format(wait_time))
     return action
